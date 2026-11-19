@@ -21,9 +21,6 @@ class Solution(object):
                         Z.append(True)
                     else:
                         Z.append(False)
-
-
-                    
         X = len(Y)
         A = len(Z)
         if Y.count(True)==X and Z.count(True)==A :
