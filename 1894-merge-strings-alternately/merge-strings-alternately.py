@@ -8,19 +8,17 @@ class Solution(object):
         o = ""
         x = list(word1)
         y = list(word2)
-
         X = len(x)
         Y = len(y)
-
-        for i in range(min(X, Y)):
-            o += x[i]
-            o += y[i]
-
-        if X > Y:
-            o += word1[Y:]
-        elif Y > X:
-            o += word2[X:]
-
+        for i in range(min(X,Y)):
+            o+=x[i]
+            o+=y[i]
+        if X<Y:
+            o+=word2[X:]
+        elif X>Y:
+            o+=word1[Y:]
         return o
 
+        
+   
         
